@@ -64,7 +64,7 @@ $dropify-font-path:        "../fonts" !default;
     &.has-error {
         border-color: $dropify-error-color;
 
-        .dropify-message .dropify-error,  {
+        .dropify-message .dropify-error {
             display: block;
         }
 
@@ -244,7 +244,7 @@ $dropify-font-path:        "../fonts" !default;
                     &.dropify-filename {
                         span.file-icon {
                             @extend .dropify-font;
-                            @extend .dropify-font-empty;
+                            @extend .dropify-font-empty !optional;
                             margin-right: 2px;
                         }
                     }

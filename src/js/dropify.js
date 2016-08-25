@@ -471,19 +471,19 @@ Dropify.prototype.sizeToByte = function(size)
  */
 Dropify.prototype.validateImage = function()
 {
-    if (this.settings.minWidth !== 0 && this.settings.minWidth >= this.file.width) {
+    if (this.settings.minWidth !== 0 && this.settings.minWidth > this.file.width) {
         this.pushError("minWidth");
     }
 
-    if (this.settings.maxWidth !== 0 && this.settings.maxWidth <= this.file.width) {
+    if (this.settings.maxWidth !== 0 && this.settings.maxWidth < this.file.width) {
         this.pushError("maxWidth");
     }
 
-    if (this.settings.minHeight !== 0 && this.settings.minHeight >= this.file.height) {
+    if (this.settings.minHeight !== 0 && this.settings.minHeight > this.file.height) {
         this.pushError("minHeight");
     }
 
-    if (this.settings.maxHeight !== 0 && this.settings.maxHeight <= this.file.height) {
+    if (this.settings.maxHeight !== 0 && this.settings.maxHeight < this.file.height) {
         this.pushError("maxHeight");
     }
 
