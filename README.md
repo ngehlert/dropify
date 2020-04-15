@@ -57,7 +57,7 @@ Compile assets
 
 ## Usage
 
-You have to include __[dist/js/dropify.js](dist/js/dropify.js)__, __[dist/css/dropify.css](dist/css/dropify.css)__ and __dist/fonts/*__ to your project, then you juste have to init the jQuery plugin like that :
+You have to include __[dist/js/dropify.js](dist/js/dropify.js)__, __[dist/css/dropify.css](dist/css/dropify.css)__ and __dist/fonts/*__ to your project, then you just have to init the jQuery plugin like that :
 
 ```javascript
 $('.dropify').dropify();
@@ -170,7 +170,7 @@ $('.dropify').dropify();
 ```
 
 
-* __messages:__  You can translate default messages. You juste have to add an options array when you init the plugin. This messages will be replaced in the __tpl__ option.
+* __messages:__  You can translate default messages. You just have to add an options array when you init the plugin. This messages will be replaced in the __tpl__ option.
 
 ```javascript
 $('.dropify').dropify({
@@ -178,13 +178,13 @@ $('.dropify').dropify({
         'default': 'Drag and drop a file here or click',
         'replace': 'Drag and drop or click to replace',
         'remove':  'Remove',
-        'error':   'Ooops, something wrong appended.'
+        'error':   'Ooops, something wrong happended.'
     }
-}
+});
 ```
 
 
-* __error:__  You can translate default errors messages. You juste have to add an options array when you init the plugin. __{{ value }}__ text will be replaced by the option.
+* __error:__  You can translate default errors messages. You just have to add an options array when you init the plugin. __{{ value }}__ text will be replaced by the option.
 
 ```javascript
 $('.dropify').dropify({
@@ -196,11 +196,11 @@ $('.dropify').dropify({
         'maxHeight': 'The image height is too big ({{ value }}px max).',
         'imageFormat': 'The image format is not allowed ({{ value }} only).'
     }
-}
+});
 ```
 
 
-* __tpl:__  You can update default template. You juste have to add an options array when you init the plugin.
+* __tpl:__  You can update default template. You just have to add an options array when you init the plugin.
 
 ```javascript
 $('.dropify').dropify({
@@ -214,7 +214,7 @@ $('.dropify').dropify({
         errorLine:       '<p class="dropify-error">{{ error }}</p>',
         errorsContainer: '<div class="dropify-errors-container"><ul></ul></div>'
     }
-}
+});
 ```
 
 
